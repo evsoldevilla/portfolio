@@ -1,0 +1,227 @@
+
+/* .bg {
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    filter: blur(50px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    max-width: 900px;
+    z-index: -100;
+ 
+} */
+.profile {
+    width: 100%;
+}
+.mainpic {
+    position: absolute;
+    border-radius: 45%;
+    border: 1px solid #ddd;
+    padding: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    top: 60px;
+    left: 10%;
+    right: 10%;
+    width: 60%;
+    box-shadow: 30px 0px 30px rgba(0, 0, 0, 0.5);
+    max-width: 600px;
+}
+.movingimages {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 720px;
+    margin-right: 10%
+}
+
+.movingimages img {
+    position: absolute;
+    width: 20%;
+
+    z-index: -200;
+    
+}
+
+/*===============================================*/
+
+.vba {
+    position: absolute;
+    top: 80px;
+    animation: mymovevba 7s infinite;
+    -webkit-animation: mymovevba 7s infinite;
+    animation-timing-function: linear;
+}
+
+.nodeimage {
+    position: absolute;
+    top: 140px;
+    animation: mymovenode 3s infinite;
+    -webkit-animation: mymovenode 3 s infinite;
+    animation-timing-function: ease-in;
+}
+.python {
+    position: absolute;
+    top: 240px;
+    animation: mymovepython 10s infinite;
+    -webkit-animation: mymovepython 10s infinite;
+    animation-timing-function: ease;
+}
+.sqlserver {
+    position: absolute;
+    top: 20%;
+    animation: mymovesqlserver 5s infinite;
+    -webkit-animation: mymovesqlserver 5s infinite;
+    animation-timing-function: linear;
+}
+
+.mysql {
+    position: absolute;
+    top: 40%;
+    animation: mymovemysql 9s infinite;
+    -webkit-animation: mymovemysql 9s infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.java {
+    position: absolute;
+    top: 45%;
+    animation: mymovejava 11s infinite;
+    -webkit-animation: mymovejava 11s infinite;
+    animation-timing-function: ease-in-linear;
+}
+.csharp {
+    position: absolute;
+    top: 70%;
+    animation: mymovesqlservern 6s infinite;
+    -webkit-animation: mymovesqlserver 6s infinite;
+    animation-timing-function: linear;
+}
+
+/*===============================================*/
+
+
+
+
+
+.text-block-slider {
+    position: absolute;
+    display: block;
+    padding-left: 1%;
+    border: 5px solid rgb(222, 255, 161);
+    top: 60%;
+    height: auto;
+    min-height: 350px;
+    bottom: auto;
+    background-color:rgba(0, 0, 0, 0.75);
+    color: white;   
+    font-family: Avant Garde, Avantgarde, Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+    text-shadow: 2px 1px brown;
+    font-size: 26px;
+    width: 97%;
+    margin: 0 0.5%;
+}
+
+
+
+@keyframes mymovevba {
+    from {left: -120px;}
+    to {left: 1980px;}
+}
+
+@-webkit-keyframes mymovevba {
+    from {left: -120px;}
+    to {left: 300px;}
+}
+
+@keyframes mymovepython {
+    from {left: -90px;}
+    to {left: 1980px;}
+}
+
+@-webkit-keyframes mymovepython {
+    from {left: -90px;}
+    to {left: 300px;}
+}
+
+@keyframes mymovenode {
+    from {left: -90px;}
+    to {left: 1980px;}
+}
+
+@-webkit-keyframes mymovenode {
+    from {left: 90px;}
+    to {left: 1980px;}
+}
+@keyframes mymovesqlserver {
+    from {left: 90px;}
+    to {left: 1980px;}
+}
+@keyframes mymovemysql {
+    from {left: -20px;}
+    to {left: 1980px;}
+}
+
+@-webkit-keyframes mymovemysql {
+    from {left: -20px;}
+    to {left: 1980px;}
+}
+
+@keyframes mymovejava {
+    from {left: -80px;}
+    to {left: 1980px;}
+}
+
+@-webkit-keyframes mymovejava {
+    from {left: -80px;}
+    to {left: 1980px;}
+}
+
+
+
+@media screen and (min-width: 769px) {
+    
+  }
+
+  @media screen and (max-width: 768px) {
+    .text-block-slider {
+        font-size: 16px;
+        margin-top: -100px;
+        bottom: auto;
+        top: 480px;
+        height: auto;
+        width: 96%;
+        margin-right: auto;
+        min-height: 350px;
+    }
+
+    .mainpic {
+        min-width:280px;
+        min-height: 280px
+
+    }
+    .vba, .python {
+        min-width:220px;
+    }
+
+    /* .bg {
+        min-width: 460px;
+        min-height: 460px
+    } */
+  }
+
+  @media screen and (max-height: 790px) {
+    .text-block-slider {
+        font-size: 16px;
+        bottom: auto;
+        top: 70%;
+        height: auto;
+    }
+    .mainpic {
+        max-width:420px;
+        max-height: 420px
+
+    }
+  }

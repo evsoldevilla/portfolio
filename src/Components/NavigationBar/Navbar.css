@@ -1,0 +1,115 @@
+.toolbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: radial-gradient(rgba(94, 170, 231,0.3), rgba(130, 129, 190, 0.3));   
+    height: 42px;
+    border-bottom: 2px solid rgba(201, 76, 76, 0.4);
+    z-index: 999;
+}
+
+.toolbar_navigation {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    padding: 0 1rem;
+}
+.toolbar_logo {
+    margin-left: 0.5rem;
+    text-shadow: 3px 2px rgb(230, 134, 90);
+}
+
+.toolbar_logo a {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: 2.2rem;
+    border: 0 5px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
+
+.toolbar_nav_items ul {
+    list-style: none;
+    margin:0;
+    padding: 0;
+    display: flex;
+    font-size: 2.2vw;
+}
+
+.logo {
+    width: 32px;
+    margin-bottom: -3px;
+
+}
+
+.space {
+    flex: .85;
+}
+
+.toolbar_nav_items li {
+    padding: 0 0.5rem;
+    border-right: 2px solid #454A21;
+    text-align: center;
+    text-shadow: 2px 1px rgb(230, 134, 90);
+    
+}
+
+.toolbar_nav_items li:first-child {
+    border-left: 2px solid #454A21;
+}
+
+.toolbar_nav_items a {
+    color: white;
+    text-decoration: none;
+}
+
+.toolbar_nav_items a:hover,
+.toolbar_nav_items a:active {
+    color: #8C3041;
+    font-size: 1.6rem;
+    transition: all 1s;
+    padding: 0 5px;
+    border-radius: 5px;
+    background-color: grey;
+    transition: all .5s;
+}
+
+.toolbar_logo a:hover {
+    color: #8C3041;
+    font-size: 2.3rem;
+    transition: all 1s;
+}
+
+@media (max-width: 768px) {
+    .toolbar_nav_items {
+      display: none;
+    }
+    .toolbar_logo a {
+        font-size: 1.8rem;
+    }
+  }
+  
+  @media (min-width: 769px) {
+    .toggle_button {
+      display: none;
+    }
+  
+    .toolbar_logo {
+      margin-left: 0;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    .toolbar_nav_items ul  {
+       font-size: 24px;
+    }
+    .toolbar_nav_items a:hover,
+    .toolbar_nav_items a:active {
+        font-size: 28px;
+    }
+    .toolbar_logo a {
+
+    }
+  }
